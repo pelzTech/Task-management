@@ -1,0 +1,141 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.card {
+  width: 100%; 
+  max-width: 400px; 
+  padding: 20px;
+  background-color: #f9f9f9; 
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h3{
+  justify-content: center;
+  color: #2a3166;
+}
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.form-control {
+  width: 10%;
+  padding: 5px;
+  font-size: 1rem;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.2);
+}
+
+.btn-primary {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  margin-left: 50px;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #2a3166;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-link {
+  background: none;
+  border: none;
+  color: #2a3166;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 5px;
+  font-size: 0.9rem;
+}
+
+.btn-link:hover {
+  color: #0056b3;
+}
+
+.btn-light {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #f4f4f4;
+  color: #333;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-light img {
+  width: 20px;
+  height: 20px;
+}
+
+.btn-light:hover {
+  background-color: #e0e0e0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    max-width: 320px;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  .form-control {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .btn-primary, .btn-light {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}

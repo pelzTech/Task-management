@@ -1,0 +1,28 @@
+
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+body {
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-image: url('./assets/back4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+ 
+  body.dark {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  .bg-white.dark {
+    background-color: #333;
+  }
+  
+  .text-gray-800.dark {
+    color: #ddd;
+  }
+  
+ 

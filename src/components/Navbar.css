@@ -1,0 +1,113 @@
+
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+.navbar {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #333;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.nav-link {
+  color: #2a3166;
+  font-weight: bold;
+  font-size: 4rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.nav-item .btn {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-item .btn:hover {
+  font-weight: bold;
+  background-color: #2a3166;
+  color: #fff;
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+}
+
+.navbar-toggler-icon {
+  filter: invert(50%);
+}
+
+.dropdown-menu {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 90px; 
+    left: 0;
+    margin-top: 5px;
+    width: 100%;
+    background-color: #2a3166e1;
+    z-index: 1050;
+    transition: max-height 0.3s ease;
+    max-height: 100vh; 
+    overflow-y: auto; 
+  }
+
+  .navbar-nav {
+    margin-top: 0;
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  .nav-item {
+    margin-bottom: 1rem;
+  }
+
+  .dropdown-menu {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .dropdown-menu li {
+    color: #dc3545;
+  }
+
+  .dropdown-item li {
+    align-items: center;
+    color: #dc3545;
+  }
+
+  .nav-item .btn {
+    justify-content: center;
+    align-items: center;
+  }
+
+  body {
+    padding-top: 56px;
+  }
+
+  .navbar-expand-lg .navbar-collapse.show {
+    position: static;
+    max-height: none;
+  }
+}
